@@ -1,0 +1,21 @@
+<br class="clear" />
+<!-- Page content -->
+<h1 class="col-xs-10 col-xs-offset-1">Projects:</h1>
+
+
+  <% @projects.each do |p| %>
+    <div class="col-xs-10 col-xs-offset-1 booyah-box">
+      <h3><%= link_to p.name, p.url %></h3>
+      <br />
+      <h4><%= p.description %></h2>
+    </div>
+  <% end %>
+
+
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('body').css("background","white");
+  })
+</script>
